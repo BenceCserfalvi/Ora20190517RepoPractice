@@ -15,11 +15,7 @@ public class Ora20190517RepoPractice {
     
     public static void main(String[] args) {
         
-        
-        Person tibi = new Person("Kovács Tibor", 27, "Arkansas", "tibor.kovacs@gmail.com", "5014 Arkansas Drive road 54");
-        
-
-
+            
 
     }
     
