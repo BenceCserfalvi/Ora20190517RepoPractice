@@ -5,18 +5,20 @@
  */
 package ora20190517repopractice;
 
+import java.io.FileNotFoundException;
+import java.util.Collections;
+
 /**
  *
  * @author N007
  */
 public class Ora20190517RepoPractice {
 
-    
-    
-    public static void main(String[] args) {
-        
-            
+    public static void main(String[] args) throws FileNotFoundException {
 
+        Reader.read();
+        Collections.sort(Reader.persons,new PersonNameComparator());
     }
     
+
 }
