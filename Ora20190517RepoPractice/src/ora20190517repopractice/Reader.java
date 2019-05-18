@@ -20,14 +20,14 @@ public class Reader {
 
     public static void read() throws FileNotFoundException {
         Scanner sc = new Scanner(new File("us-500.csv"));
-
+        sc.nextLine();
         while (sc.hasNextLine()) {
             String[] line = sc.nextLine().split(",");
 
             String name = "";
-            name.concat(line[0]);
-            name.concat(" ");
-            name.concat(line[1]);
+            name = name.concat(line[0]);
+            name = name.concat(" ");
+            name = name.concat(line[1]);
 
             Person p = new Person(name, line[4], line[10]);
             
