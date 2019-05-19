@@ -20,8 +20,16 @@ public class Ora20190517RepoPractice {
     public static void main(String[] args) throws FileNotFoundException {
 
         Reader.read();
-        Collections.sort(Reader.persons, new PersonNameComparator());
+        Collections.sort(Reader.persons,new PersonNameComparator());
+        printingPeopleEmailAdressesByCity("Chicago");
     }
+    
+    public static void printingPeopleEmailAdressesByCity(String city){
+        for (Person person : Filter.cityFilter(city, Reader.persons)) {
+            System.out.println(person.getEmailAdress());
+        }
+    }
+    
 
     public static void printPeopleInCity() {
         Scanner sc = new Scanner(System.in);
