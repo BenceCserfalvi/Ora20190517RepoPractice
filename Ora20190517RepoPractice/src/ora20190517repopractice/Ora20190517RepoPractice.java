@@ -18,6 +18,13 @@ public class Ora20190517RepoPractice {
 
         Reader.read();
         Collections.sort(Reader.persons,new PersonNameComparator());
+        printingPeopleEmailAdressesByCity("Chicago");
+    }
+    
+    public static void printingPeopleEmailAdressesByCity(String city){
+        for (Person person : Filter.cityFilter(city, Reader.persons)) {
+            System.out.println(person.getEmailAdress());
+        }
     }
     
 
